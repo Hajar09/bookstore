@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* tout ce qui est flex */
+
+.flex {
+    display:flex;
+}
+.flex > * { /* direct child*/
+    margin: auto; 
+}
+
+/* for all vertical align */
+.vertical {
+    flex-direction: column;
+}
+
+/* for all horizontal align */
+.horizontal {
+    flex-direction: row;
+}
+
+p {
+    padding: 50px 0px 40px 0px;
+}
+
+h1 {
+    padding: 20px 0px 50px 0px;
+}
+
+#layout {
+    
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 50px;
+    background-color: rgb(180, 180, 180)
+
+}
+
+#layout a {
+    text-decoration: none;
+    outline: none;
+    margin:auto;
+    color: white;
+}
+
+#layout a:focus {
+    color: rgb(50, 50, 50);
+}
+
+

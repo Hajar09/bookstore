@@ -1,0 +1,23 @@
+extends layout 
+block content
+        #register.flex.vertical
+            h1 S'inscrire au bookstore
+            p Veuillez vous enregister ici les amis 
+            form(method="POST", action="/register")
+                .form-group
+                    label Name
+                    input.form-control(name='name', type='text', placeholder="Entrez votre nom")
+                .form-group
+                    label Email
+                    input.form-control(name='email', type='email', placeholder="Entrez votre email")
+                .form-group
+                    label Username
+                    input.form-control(name='username', type='username', placeholder="Entrez votre username")    
+                .form-group
+                    label Password
+                    input.form-control(name='password', type='password', placeholder="Entrez votre password")
+                .form-group
+                    label Confirmer password
+                    input.form-control(name='password2', type='password', placeholder="Confirmer votre password")
+                input.btn.btn-primary(type='submit', name='submit', value="Enregistrer")
+

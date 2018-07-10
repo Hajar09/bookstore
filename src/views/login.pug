@@ -1,0 +1,11 @@
+extends layout
+block content
+    #login.flex.vertical
+        h2.page-header Login
+        p Veuillez vous connecter ici
+        form(method="POST", action="/login")
+            label Email
+            input.form-control(name="email", type="email", placeholder="Entrez votre email")
+            label Password 
+            input.form-control(name="password", type="password", placeholder="Entrez votre password")
+            input.btn.btn-primary(type="submit", name="submit", placeholder="Connection")
